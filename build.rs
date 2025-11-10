@@ -84,7 +84,7 @@ fn main() {
         // Layout tests fail when cross-compiling
         .layout_tests(false)
         // Wrapping unsafe ops is necessary for Rust 2024 edition
-        .wrap_unsafe_ops(true)
+        .wrap_unsafe_ops(false)
         // Use ::core for no_std compatibility
         .use_core()
         // Finish the builder and generate the bindings.
